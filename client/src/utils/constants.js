@@ -1,4 +1,4 @@
-const HOST = import.meta.env.VITE_SERVER_URL
+const HOST = "https://fling-server.onrender.com"
 const AUTH_ROUTE = "api/auth";
 const SIGNUP_ROUTE = `${AUTH_ROUTE}/signup`
 const LOGIN_ROUTE = `${AUTH_ROUTE}/login`
