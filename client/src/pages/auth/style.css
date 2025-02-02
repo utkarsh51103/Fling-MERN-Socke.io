@@ -1,0 +1,22 @@
+
+.submit{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 220px;
+  padding-top: 10px;
+  height: 60px;
+  color: white;
+  background-color: #6d28d9;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.gray{
+    background-color: #e2e8f0;
+    color: #676767;
+}
+
+/* flex justify-center items-center w-96 h-14 text-white bg-violet-800 font-bold text-xl cursor-pointer rounded-2xl */
