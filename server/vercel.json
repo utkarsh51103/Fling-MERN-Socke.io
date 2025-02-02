@@ -1,5 +1,4 @@
 {
-    "installCommant": "npm i --legacy-peer-deps",
     "version":2,
     "builds":[
         {
