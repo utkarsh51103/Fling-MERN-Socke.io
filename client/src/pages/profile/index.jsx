@@ -109,10 +109,10 @@ function Profile() {
     }
   };
 
-  // 1b1c24
+  
 
   return (
-    <div className="bg-[#bdbfcd] h-[100vh] flex items-center justify-center flex-col gap-10">
+    <div className="bg-[#1b1c24] h-[100vh] flex items-center justify-center flex-col gap-10">
       <div className="flex flex-col gap-10 w-[100vw] md:w-max sm:ml-44 md:ml-0">
         <div onClick={handlenavigate}>
           <IoArrowBack className="text-4xl lg:text-6xl text-white/90 cursor-pointer" />
