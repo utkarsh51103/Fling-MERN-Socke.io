@@ -49,7 +49,9 @@ function App() {
     },[userInfo, setuserinfo])
     
     if(loading){
-      return <div className="h-[100vh] w-[100vw] flex items-center justify-center text-3xl text-white bg-black">Loading........</div>
+      return <div className="h-[100vh] w-[100vw] flex items-center justify-center text-white font-thin bg-black"><span className="text-3xl">Loading........</span>
+      <div>Might take 15-20 sec</div>
+      </div>
     }
 
   return (
