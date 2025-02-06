@@ -49,7 +49,7 @@ function App() {
     },[userInfo, setuserinfo])
     
     if(loading){
-      return <div>Loading........</div>
+      return <div className="h-[100vh] w-[100vw] flex items-center justify-center text-3xl text-white bg-black">Loading........</div>
     }
 
   return (
