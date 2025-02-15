@@ -9,7 +9,7 @@ const setupsocket = (server) => {
       methods: ["GET", "POST"],
       credentials: true,
     },
-  });
+  }); 
 
   const userSocketMap = new Map();
 

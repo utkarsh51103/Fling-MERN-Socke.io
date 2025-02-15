@@ -20,7 +20,7 @@ export const createChatSlice = (set,get) =>({
    closeChat:()=>set({selectedChatData:undefined,selectedChatType:undefined,selectedChatMessages:[]
    }),
    addChannel:(channel)=>{
-     const channels = get().channel;
+     const channels = get().channels;
      set({channels : [channel,...channels]})
    },
    addMessage:(message)=>{
