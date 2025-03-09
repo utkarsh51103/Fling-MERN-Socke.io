@@ -74,7 +74,7 @@ function auth() {
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-[#1b1c24]">
-    <div className="flex flex-col m-auto my-28 w-[600px]  bg-[#2c2e3b] pb-8 rounded-xl">
+    <div className="flex flex-col m-auto my-28 w-[90%] md:w-[70%] lg:w-[50%] xl:w-[40%]  bg-[#2c2e3b] pb-8 rounded-xl">
       <div className="flex flex-col items-center gap-2 container mt-8 text-white text-5xl font-medium ">
         <div>{action}</div>
         <div className="w-20 h-1.5 bg-white rounded-2xl"></div>
@@ -84,7 +84,7 @@ function auth() {
           {action === "Login" ? (
             <div></div>
           ) : (
-            <div className="flex items-center m-auto w-96 h-20 bg-slate-200 rounded-xl ">
+            <div className="flex items-center m-auto w-[80%] h-20 bg-slate-200 rounded-xl ">
               <CgProfile className="mx-3" size={25} color="gray" />
               <input
                 className="h-12 w-96 bg-transparent border-none outline-none bg-slate-200 text-xl"
@@ -93,7 +93,7 @@ function auth() {
               />
             </div>
           )}
-          <div className="flex items-center m-auto w-96 h-20 bg-slate-200 rounded-xl ">
+          <div className="flex items-center m-auto w-[80%] h-20 bg-slate-200 rounded-xl ">
             <MdEmail size={25} className="mx-3" color="gray" />
             <input
               className="h-12 w-96 bg-transparent border-none outline-none bg-slate-200 text-xl"
@@ -104,7 +104,7 @@ function auth() {
               onChange={(e)=>setemail(e.target.value)}
             />
           </div>
-          <div className="flex items-center m-auto w-96 h-20 bg-slate-200 rounded-xl ">
+          <div className="flex items-center m-auto w-[80%] h-20 bg-slate-200 rounded-xl ">
             <RiLockPasswordFill size={25} className="mx-3" color="gray" />
             <input
               className="h-12 w-96 bg-transparent border-none outline-none bg-slate-200 text-xl"
@@ -114,7 +114,7 @@ function auth() {
               onChange={(e)=>setpassword(e.target.value)}
             />
           </div>
-          {action==="SignUp"?<div className="flex items-center m-auto w-96 h-20 bg-slate-200 rounded-xl ">
+          {action==="SignUp"?<div className="flex items-center m-auto w-[80%] h-20 bg-slate-200 rounded-xl ">
             <RiLockPasswordFill size={25} className="mx-3" color="gray" />
             <input
               className="h-12 w-96 bg-transparent border-none outline-none bg-slate-200 text-xl"
@@ -124,8 +124,8 @@ function auth() {
               onChange={(e)=>setconfirmpassword(e.target.value)}
             />
           </div>:<div></div>}
-          <div className="flex justify-center items-center bg-violet-700 mx-48 py-2 rounded-xl text-white font-bold text-xl  ">
-            <button type="submit">Submit</button>
+          <div className="flex justify-center items-center py-2 rounded-xl text-white font-bold text-xl  ">
+            <button type="submit" className="bg-violet-700 p-2 rounded-lg">Submit</button>
           </div>
         </div>
       </form>
